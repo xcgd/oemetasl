@@ -9,6 +9,6 @@ How to
     class oetest(osv.Model):
         __metaclass__ = OEMetaSL
 
-    #Class defined in OEMetaSL will be automatically added if they are not
+    #Functions defined in OEMetaSL will be automatically added if they are not
     #implemented in the osv.Model class
 
