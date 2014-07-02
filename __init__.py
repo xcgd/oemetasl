@@ -1,4 +1,4 @@
-from openerp.osv import osv
+from openerp.osv import orm
 from openerp.tools.translate import _
 
 __all__ = ['OEMetaSL']
@@ -23,7 +23,7 @@ def get_overrides():
         yield func_name, func
 
 
-class OEMetaSL(osv.MetaModel):
+class OEMetaSL(orm.MetaModel):
     def __init__(cls, name, bases, nmspc):
         super(OEMetaSL, cls).__init__(name, bases, nmspc)
 
